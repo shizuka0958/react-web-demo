@@ -1,10 +1,12 @@
-.Home-context {
-    position: relative
+.Home-slogan-div{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:-20px;
+    margin-left:-260px;
 }
 
 .Home-slogan {
-    position: absolute;
-    left: '100px';
-    top: '100px';
-    font-size: '4em';
+    font-size: 4em;
+    color: #ffffff;
 }

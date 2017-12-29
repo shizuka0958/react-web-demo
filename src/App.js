@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './App.css'
 import {
     Dropdown,
     Button,
@@ -40,13 +40,12 @@ export default class HomepageLayout extends Component {
                         <Menu.Item as='a'>CONTACT</Menu.Item>
                     </Container>
                 </Menu>
-                <div className="Home" style={{position:'relative'}}>
-                    <div className="Home-context">
+                <div style={{position:'relative'}}>
+                    <div>
                         <Image src={bkgimg} fluid />
-                        <div style={{position:'absolute',left: '50%', top: '50%', marginTop:'-20px', marginLeft:'-250px'}}>
-                        <h1 className="Home-slogan"style={{fontSize: '3.5em',color:'#ffffff'}} >Eye Tracking Made Easy</h1>
+                        <div className="Home-slogan-div">
+                        <h1 className="Home-slogan">Eye Tracking Made Easy</h1>
                         </div>
-                        
                     </div>
                 </div>
 
