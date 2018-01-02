@@ -40,13 +40,13 @@ export default class HomepageLayout extends Component {
                         <Menu.Item as='a'>CONTACT</Menu.Item>
                     </Container>
                 </Menu>
-                <div style={{position:'relative'}}>
-                    <div>
-                        <Image src={bkgimg} fluid />
+                <div className="Home">
+                    {/* <div> */}
+                        {/* <Image src={bkgimg} fluid /> */}
                         <div className="Home-slogan-div">
                         <h1 className="Home-slogan">Eye Tracking Made Easy</h1>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
 
         <Segment style={{ padding: '8em 0em' }} vertical>
