@@ -1,33 +1,128 @@
-.Home{
-    width: 100%;
-    height: 0;
-   padding-top: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background-size: cover;
-    background: url("./img/001.jpg") center;
-    position: relative;
+/* common */
 
-   
+.center {
+    text-align: center;
 }
 
-.Home-slogan-div{
-    position:absolute;
+.color-White {
+    color: #ffffff;
+}
+
+.color-subheader {
+    color: #ffffff;
+}
+
+.fontSize-normal {
+    font-size: 1em;
+}
+
+
+/* Home */
+
+.Home {
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    overflow: hidden;
+    background-size: cover;
+    /* background: url("./img/home_bkg.jpg") center; */
+    position: relative;
+}
+
+.Home h1 {
+    color: #fdffff;
+}
+
+.Home-slogan-div {
+    position: absolute;
     left: 50%;
     top: 50%;
-    margin-top:-20px;
-    margin-left:-260px;
+    margin-top: -20px;
+    margin-left: -260px;
     /* width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center; */
-    
 }
 
 .Home-slogan {
     font-size: 4em;
     color: #ffffff;
+}
+
+
+/* Technologies */
+
+.Technologies-title {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.Technologies-grid {
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.Technologies-title p {
+    display: inline-block;
+    max-width: 35em;
+    color: #b4b5b6
+}
+
+.Technologies-grid p {
+    padding-top: 2em;
+}
+
+
+/* Markets */
+
+.Markets {
+    /* width: 100%;
+    height: 0; 
+    background: #c7d411;*/
+    /* background: url("./img/markets_bkg.jpg") center; */
+    background-size: cover;
+    overflow: hidden;
+    /*   overflow: hidden;
+    background-size: cover;
+    background: url("./img/markets_bkg.jpg") center;
+    position: relative; */
+}
+
+.Markets>h1 {
+    color: #ffffff;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.Markets>div {
+    padding-bottom: 5em;
+}
+
+.Markets>div p {
+    padding-top: 0.8em;
+    font-size: 1.8em;
+}
+
+.Markets p {
+    color: #feffff;
+}
+
+
+/* About */
+.About>h1 {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/* Contact */
+
+.Contact h1 {
+    color: #ffffff
+}
+
+.Contact p {
+    color: #a3a7ab;
 }

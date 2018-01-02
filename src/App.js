@@ -15,9 +15,19 @@ import {
     Visibility,
 } from 'semantic-ui-react'
 
-
-import bkgimg from './img/001.jpg'
-
+import Home_bkgimg from './img/home_bkg.jpg'
+import Markets_bkgimg from './img/markets_bkg.jpg'
+import Logo_img from './img/logo.png'
+import Technologies_img_01 from './img/2-1.png'
+import Technologies_img_02 from './img/2-2.png'
+import Technologies_img_03 from './img/2-3.png'
+import Markets_img_01 from './img/3-1.png'
+import Markets_img_02 from './img/3-2.png'
+import Markets_img_03 from './img/3-3.png'
+import Markets_img_04 from './img/3-4.png'
+import Markets_img_05 from './img/3-5.png'
+import Markets_img_06 from './img/3-6.png'
+import AboutUS_img_01 from './img/4-1.png'
 
 export default class HomepageLayout extends Component {
     state = {}
@@ -28,11 +38,11 @@ export default class HomepageLayout extends Component {
     render() {
         const { visible } = this.state
 
-        // style={{position:'absolute',fontSize: '4em',top:'10px'}}
         return (
             <div>
                 <Menu fixed='top' inverted stackable>
                     <Container>
+                       
                         <Menu.Item as='a' active position='right'>Home</Menu.Item>
                         <Menu.Item as='a' >TECHNOLOGIES</Menu.Item>
                         <Menu.Item as='a'>MARKETS</Menu.Item>
@@ -40,118 +50,151 @@ export default class HomepageLayout extends Component {
                         <Menu.Item as='a'>CONTACT</Menu.Item>
                     </Container>
                 </Menu>
-                <div className="Home">
-                    {/* <div> */}
-                        {/* <Image src={bkgimg} fluid /> */}
-                        <div className="Home-slogan-div">
-                        <h1 className="Home-slogan">Eye Tracking Made Easy</h1>
-                        </div>
-                    {/* </div> */}
+
+                <div className='Home' style={{background: `url(${Home_bkgimg}) center`}}>
+                    <div className='Home-slogan-div'>
+                        <h1 className='Home-slogan'>Eye Tracking Made Easy</h1>
+                    </div>
                 </div>
 
-        <Segment style={{ padding: '8em 0em' }} vertical>
-            <Grid container stackable verticalAlign='middle'>
-                <Grid.Row>
-                    <Grid.Column width={8}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>We Help Companies and Companions</Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            We can give your company superpowers to do things that they never thought possible. Let us delight
-                  your customers and empower your needs... through pure data analytics.
-                </p>
-                        <Header as='h3' style={{ fontSize: '2em' }}>We Make Bananas That Can Dance</Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
-                </p>
-                    </Grid.Column>
-                    <Grid.Column floated='right' width={6}>
-                        <Image
-                            bordered
-                            rounded
-                            size='large'
-                            src='/assets/images/wireframe/white-image.png'
-                        />
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column textAlign='center'>
-                        <Button size='huge'>Check Them Out</Button>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-        </Segment>
-            <Segment style={{ padding: '0em' }} vertical>
-                <Grid celled='internally' columns='equal' stackable>
-                    <Grid.Row textAlign='center'>
-                        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                            <Header as='h3' style={{ fontSize: '2em' }}>"What a Company"</Header>
-                            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-                        </Grid.Column>
-                        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                            <Header as='h3' style={{ fontSize: '2em' }}>"I shouldn't have gone with their competitor."</Header>
-                            <p style={{ fontSize: '1.33em' }}>
-                                <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-                                <b>Nan</b> Chief Fun Officer Acme Toys
-                </p>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
-            </Segment>
-            <Segment style={{ padding: '8em 0em' }} vertical>
-                <Container text>
-                    <Header as='h3' style={{ fontSize: '2em' }}>Breaking The Grid, Grabs Your Attention</Header>
-                    <p style={{ fontSize: '1.33em' }}>
-                        Instead of focusing on content creation and hard work, we have learned how to master the art of doing
-              nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic
-              and worth your attention.
-            </p>
-                    <Button as='a' size='large'>Read More</Button>
-                    <Divider
-                        as='h4'
-                        className='header'
-                        horizontal
-                        style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-                    >
-                        <a href='#'>Case Studies</a>
-                    </Divider>
-                    <Header as='h3' style={{ fontSize: '2em' }}>Did We Tell You About Our Bananas?</Header>
-                    <p style={{ fontSize: '1.33em' }}>
-                        Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but it's really
-              true.
-              It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
-            </p>
-                    <Button as='a' size='large'>I'm Still Quite Interested</Button>
-                </Container>
-            </Segment>
-            <Segment inverted vertical style={{ padding: '5em 0em' }}>
-                <Container>
-                    <Grid divided inverted stackable>
+                <div className='Technologies center'>
+                    <div className='Technologies-title'>
+                        <h1>TECHNOLOGIES</h1>
+                        <p>Our novel calibration approach,data fusion algorithms make eye tracking system used in dynamic,unconstrained,real-word scenarios.</p>
+                    </div>
+                    <div className='Technologies-grid'>
+                        <Grid centered columns={4} stackable>
+                            <Grid.Column>
+                                <div style={{ textAlign: 'center' }}>
+                                    <div style={{ display: 'inline-block' }}>
+                                        <Image style={{ display: 'inline-block' }} src={Technologies_img_01}></Image>
+                                        <p>Innovative Calibration Workflow</p>
+                                    </div>
+                                </div>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <div style={{ textAlign: 'center' }}>
+                                    <div style={{ display: 'inline-block' }}>
+                                        <Image style={{ display: 'inline-block' }} src={Technologies_img_02}></Image>
+                                        <p>Advanced Data Fusion Algorithms</p>
+                                    </div>
+                                </div>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <div style={{ textAlign: 'center' }}>
+                                    <div style={{ display: 'inline-block' }}>
+                                        <Image style={{ display: 'inline-block' }} src={Technologies_img_03}></Image>
+                                        <p>Wearable, Portable and Configurable</p>
+                                    </div>
+                                </div>
+                            </Grid.Column>
+                        </Grid>
+                    </div>
+                </div >
+
+
+                <div className='Markets center' style={{background: `url(${Markets_bkgimg}) center`}}>
+                    <h1>MARKETS</h1>
+                    <div>
+                        <Grid stackable>
+                            <Grid.Row centered columns={4} >
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_01}></Image>
+                                            </div>
+                                            <p>AI</p>
+                                        </div>
+
+                                    </div>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_02}></Image>
+                                            </div>
+                                            <p>Training</p>
+                                        </div>
+                                    </div>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_03}></Image>
+                                            </div>
+                                            <p>Object recognizing</p>
+                                        </div>
+                                    </div>
+                                </Grid.Column>
+                            </Grid.Row>
+                            <Grid.Row centered columns={4}>
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_04}></Image>
+                                            </div>
+                                            <p>Entertainment</p>
+                                        </div>
+
+                                    </div>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_05}></Image>
+                                            </div>
+                                            <p>Automotive</p>
+
+                                        </div>
+                                    </div>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div style={{ display: 'inline-block' }}>
+                                            <div style={{ display: 'inline-block', width: '165px', height: '165px' }}>
+                                                <Image src={Markets_img_06}></Image>
+                                            </div>
+                                            <p>Museum</p>
+                                        </div>
+                                    </div>
+                                </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
+                    </div>
+                </div>
+
+                <div className='About center'>
+                    <h1>ABOUT US</h1>
+                    <Image src={AboutUS_img_01} style={{ display: 'inline-block', padding: '5px' }}></Image>
+                </div>
+
+                <div className='Contact' style={{ background: '#021234', margin: '5em 0em 0em', padding: '5em 0em' }}>
+                    <Grid divided stackable centered>
                         <Grid.Row>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='About' />
-                                <List link inverted>
-                                    <List.Item as='a'>Sitemap</List.Item>
-                                    <List.Item as='a'>Contact Us</List.Item>
-                                    <List.Item as='a'>Religious Ceremonies</List.Item>
-                                    <List.Item as='a'>Gazebo Plans</List.Item>
-                                </List>
+                            <Grid.Column width={6}>
+
+                                <div style={{ textAlign: 'center' }}>
+                                    <Image centered src={Logo_img} />
+                                    <div style={{ display: 'inline-block', background: '#ffffff', width: '100px', height: '100px' }}></div>
+                                    <p>2017 Vuelosophy. All rights reserved</p>
+                                </div>
                             </Grid.Column>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='Services' />
-                                <List link inverted>
-                                    <List.Item as='a'>Banana Pre-Order</List.Item>
-                                    <List.Item as='a'>DNA FAQ</List.Item>
-                                    <List.Item as='a'>How To Access</List.Item>
-                                    <List.Item as='a'>Favorite X-Men</List.Item>
-                                </List>
-                            </Grid.Column>
-                            <Grid.Column width={7}>
-                                <Header as='h4' inverted>Footer Header</Header>
-                                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                            <Grid.Column width={6}>
+                                <div style={{ textAlign: 'center' }}>
+                                    <h1>Contact Us</h1>
+                                    <p>3 Floor,Tower A,Dinghao Building,Haidian District Beijing </p>
+                                    <p>1172 Castro Street Mountain View,CA</p>
+                                    <p>bnie@mac.com</p>
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
-                </Container>
-            </Segment>
+                </div>
             </div >
         )
     }
